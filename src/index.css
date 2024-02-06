@@ -1,13 +1,82 @@
-body {
+/* *{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container_box {
+ background-color: rgb(0, 0, 0);
+ height: 100vh;
+ width: 100vw;
+}
+.form_box {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  padding: 20px 10px;
+  border: 2px solid rgb(101 52 217);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input{
+  padding: 7px 0px 7px 30px;
+  margin: 5px;
+  border: 1px solid rgb(101 52 217);
+  background-color: #27272700;
+  color: #000000;
+  outline: none;
 }
+input::placeholder{
+  color: rgb(101 52 217);
+}
+
+.btn_text{
+  padding: 6px 30px;
+  background-color: rgb(101 52 217);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border: 1px solid #ffffff;
+  margin: 10px; 
+  font-size: 16px;
+  border-radius: 30px;
+}
+.head3{
+  color: #000000;
+  font-size: 16px;
+}
+.form_input {
+ 
+  display: flex;
+  flex-direction: column;
+
+
+}
+.head2{
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+
+}
+.icon_email{
+  position: relative;
+  top: 33px;
+  left: 10px;
+  color: rgb(101 52 217);
+  font-size: 25px;
+}
+.icon_password {
+  position: relative;
+  top: 33px;
+  left: 10px;
+  color: rgb(101 52 217);
+  font-size: 25px;
+}
+
+.eye_show{
+  position: relative;
+  top: -28px;
+  left: 245px;
+}
+ */

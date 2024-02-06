@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container_box {
+   background-color: rgb(0, 0, 0);
+   height: 100vh;
+   width: 100vw;
+  }
+  .form_box {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 20px 10px;
+    border: 2px solid rgb(101 52 217);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+  
+  input{
+    padding: 7px 30px 7px 30px;
+    margin: 5px;
+    border: 1px solid rgb(101 52 217);
+    background-color: #27272700;
+    color: #000000;
+    outline: none;
+    
+  }
+  input::placeholder{
+    color: rgb(101 52 217);
+  }
+  
+  .btn_text{
+    padding: 6px 30px;
+    background-color: rgb(101 52 217);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border: 1px solid #ffffff;
+    margin: 10px; 
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  .head3{
+    color: #000000;
+    font-size: 16px;
+  }
+
+  .head2{
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+  
+  }
+  .icon_email{
+    position: relative;
+    top: 9px;
+    left: 34px;
+    color: rgb(101 52 217);
+    font-size: 25px;
+  }
+  .icon_password {
+    position: relative;
+    top: 9px;
+    left: 34px;
+    color: rgb(101 52 217);
+    font-size: 25px;
+  }
+  
+  .eye_show{
+    position: relative;
+    top: 40px;
+    left: 242px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+.ul_list{
+    list-style: none;
+}
+.para_text {
+    padding-left: 30px;
+}
