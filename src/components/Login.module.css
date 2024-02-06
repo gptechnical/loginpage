@@ -6,11 +6,13 @@
   .container_box {
    background-color: rgb(0, 0, 0);
    height: 100vh;
-   width: 100vw;
+   /* width: 100vw; */
   }
   .form_box {
     background-color: rgb(255, 255, 255);
-    width: 300px;
+    width: 350px;
+    /* max-width: 350px; */
+    /* width: 30%; */
     padding: 20px 10px;
     border: 2px solid rgb(101 52 217);
     position: absolute;
@@ -27,7 +29,7 @@
     background-color: #27272700;
     color: #000000;
     outline: none;
-    
+    width: 100%;
   }
   input::placeholder{
     color: rgb(101 52 217);
@@ -56,23 +58,23 @@
   }
   .icon_email{
     position: relative;
-    top: 9px;
-    left: 34px;
+    top: 38px;
+    left: 10px;
     color: rgb(101 52 217);
     font-size: 25px;
   }
   .icon_password {
     position: relative;
-    top: 9px;
-    left: 34px;
+    top: 38px;
+    left: 10px;
     color: rgb(101 52 217);
     font-size: 25px;
   }
   
   .eye_show{
     position: relative;
-    top: 40px;
-    left: 242px;
+    top: 70px;
+    left: 315px;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
@@ -82,4 +84,13 @@
 }
 .para_text {
     padding-left: 30px;
+}
+@media (max-width:375) and (min-width: 320px){
+  /* .form_box{
+    width: 200px;
+  } */
+  .container_box {
+    background-color: cyan;
+
+  }
 }
