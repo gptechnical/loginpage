@@ -12,7 +12,6 @@ const Login = () => {
     const [passwordError, setPasswordError] = useState('');
     const [isVisible, setVisible] = useState(false);
 
-    var name;
     const handleChange = (e) => {
         setData({ ...data, [e.target.name]: e.target.value });
 
