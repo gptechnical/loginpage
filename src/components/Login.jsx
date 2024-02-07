@@ -44,8 +44,10 @@ const Login = () => {
           setPasswordError('Password is required');
         } else if (data.password.length < 6) {
             setPasswordError('Password must be at least 6 characters');
-        } else if (data.password.length > 10) {
+        } else if (data.password.length > 20) {
             setPasswordError('Password cannot exceed 20 characters');
+        } else {
+            setPasswordError('')
         }
       };
  
