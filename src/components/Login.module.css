@@ -84,9 +84,12 @@
 @media (max-width: 425px) and (min-width: 0px){
   .form_box{
     width: 100%;
+    top: 40%;
   }
+  
   .container_box {
     background-color: rgb(101 52 217);
+    
   }
   .eye_show {
     left: 97%;
