@@ -22,6 +22,7 @@ const Login = () => {
     validatePassword();
         setUpdate(data);
         // console.log(data)
+        alert("Form submittted successfully")
         setData({
             email: "",
             password: ""
