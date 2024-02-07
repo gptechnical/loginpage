@@ -69,6 +69,7 @@ const Login = () => {
                     placeholder='Enter the email'
                     value={data.email}
                     onChange={handleChange}
+                    onBlur={validateEmail}
                   
                 />{emailError && <p className={styles.para_text}>{emailError}</p>}
                 </li>
@@ -85,6 +86,7 @@ const Login = () => {
                     placeholder='Enter the password'
                     value={data.password}
                     onChange={handleChange}
+                    onBlur={validatePassword}
            
                 />{passwordError && <p className={styles.para_text}>{passwordError}</p>}
                     </li>
