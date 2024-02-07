@@ -18,11 +18,16 @@ const Login = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
+        if (data.email === '' || data.password === ''){
+            alert('Please All fields are fill')
+        } else {
+
+            alert("Form submittted successfully")
+        }
         validateEmail();
-    validatePassword();
+        validatePassword();
         setUpdate(data);
-        // console.log(data)
-        alert("Form submittted successfully")
+        console.log(data)
         setData({
             email: "",
             password: ""
@@ -54,6 +59,7 @@ const Login = () => {
     const toggle =()=>{
         setVisible(!isVisible);
     }
+   
     return (
         <>
         <div className={styles.container_box}>
@@ -61,7 +67,8 @@ const Login = () => {
             <h2 className={styles.head2}>Login Page....</h2>
             <form autoComplete="off">
                 <ul className={styles.ul_list}>
-                    <li><MdEmail className={styles.icon_email}/>
+                <MdEmail className={styles.icon_email}/>
+                    <li>
                     <input
                     type="email"
                     id='email'
@@ -69,7 +76,8 @@ const Login = () => {
                     placeholder='Enter the email'
                     value={data.email}
                     onChange={handleChange}
-                    onBlur={validateEmail}
+                    onBlur={validateEmail} 
+                    required
                   
                 />{emailError && <p className={styles.para_text}>{emailError}</p>}
                 </li>
@@ -77,8 +85,8 @@ const Login = () => {
                     { isVisible?  <BsEyeFill className={styles.eye_show}/> : <BsEyeSlash className={styles.eye_show}/> }
                 
                 </span>
-                    <li><RiLockPasswordLine className={styles.icon_password}/>
-                  
+                <RiLockPasswordLine className={styles.icon_password}/>
+                    <li>
                     <input
                     type={isVisible ? "text" : "password"}
                     id='password'
@@ -87,6 +95,7 @@ const Login = () => {
                     value={data.password}
                     onChange={handleChange}
                     onBlur={validatePassword}
+                   
            
                 />{passwordError && <p className={styles.para_text}>{passwordError}</p>}
                     </li>

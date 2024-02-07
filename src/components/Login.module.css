@@ -61,15 +61,15 @@
   }
   .icon_password {
     position: relative;
-    top: 38px;
-    left: 10px;
+    top: 37px;
+    left: -7px;
     color: rgb(101 52 217);
     font-size: 25px;
   }
   
   .eye_show{
     position: relative;
-    top: 70px;
+    top: 42px;
     left: 315px;
     transform: translate(-50%, -50%);
     cursor: pointer;
