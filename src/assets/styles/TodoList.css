@@ -1,0 +1,12 @@
+.input_text {
+    padding: 7px 5px 7px 5px;
+    margin: 5px;
+    border: 1px solid rgb(101 52 217);
+    background-color: #27272700;
+    color: #000000;
+    outline: none;
+    width: 50%;
+}
+.head2{
+    color: red;
+}
